@@ -1,6 +1,4 @@
-package CursoAlura2;
-
-import br.com.alura.ScreenMatch.modelos.Filme;
+package br.com.alura.ScreenMatch.modelos;
 
 public class Principal {
 	public static void main(String[] args) {
