@@ -1,12 +1,12 @@
 package CursoAlura2;
 
-import br.com.alura.ExerciciosAula2.ContaBancaria;
+import br.com.alura.ExerciciosAula2.ContaBancaria2;
 
 public class PrincipalContaBancaria {
 
 	public static void main(String[] args) {
 		
-		ContaBancaria conta = new ContaBancaria();
+		ContaBancaria2 conta = new ContaBancaria2();
 		
 		
 		

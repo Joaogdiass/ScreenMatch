@@ -1,6 +1,6 @@
 package br.com.alura.ExerciciosAula2;
 
-public class ContaBancaria {
+public class ContaBancaria2 {
 	private int numeroConta;
 	private double saldo;
 	public String titular;

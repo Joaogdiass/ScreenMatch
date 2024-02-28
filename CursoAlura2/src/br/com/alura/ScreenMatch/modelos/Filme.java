@@ -1,70 +1,16 @@
 package br.com.alura.ScreenMatch.modelos;
 
-	public class Filme {
-	private String nome;
-	private int anoDeLancamento;
-	private boolean incluidoNoPlano;
-	private double somaAvaliacao;
-	private int totalDeAvaliacoes;
-	private int duracaoEmMinutos;
+	public class Filme extends Titulo {
 	
-	
-	
-	
-	
-	
-	//Colocando os setters e os getters
-	
-	public int getotalDeAvaliacoes() {
-		return totalDeAvaliacoes;
-	}
-	
+		private String diretor;
 
-	public boolean isIncluidoNoPlano() {
-		return incluidoNoPlano;
-	}
+		public String getDiretor() {
+			return diretor;
+		}
 
-	public void setIncluidoNoPlano(boolean incluidoNoPlano) {
-		this.incluidoNoPlano = incluidoNoPlano;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public int getAnoDeLancamento() {
-		return anoDeLancamento;
-	}
-
-	public int getDuracaoEmMinutos() {
-		return duracaoEmMinutos;
-	}
-
-	public void setDuracaoEmMinutos(int duracaoEmMinutos) {
-		this.duracaoEmMinutos = duracaoEmMinutos;
-	}
-
-	public void setAnoDeLancamento(int anoDeLancamento) {
-		this.anoDeLancamento = anoDeLancamento;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public void exibeFichaTecnica() {
-		System.out.println("Nome do filme: " + nome);
-		System.out.println("Ano de lancamento: " + anoDeLancamento);
-	}
-	public void avalia(double nota){
+		public void setDiretor(String diretor) {
+			this.diretor = diretor;
+		}
 		
-		somaAvaliacao += nota;
-		totalDeAvaliacoes++;
 		
-	}
-	
-	public double mediaAvaliacoes() {
-		return somaAvaliacao/totalDeAvaliacoes;
-	}
-	
 }
