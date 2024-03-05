@@ -1,5 +1,9 @@
 package br.com.alura.ExerciciosAlura4;
 
-public class ConversorTemperatura {
+public interface ConversorTemperatura {
 
+	void celsiusParaFahrenheit(double celsius,double fahrenheit);
+	void fahrenheitParaCelsius(double celsius,double fahrenheit);
+		
+	
 }
