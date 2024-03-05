@@ -1,6 +1,8 @@
 package br.com.alura.ScreenMatch.modelos;
 
-	public class Filme extends Titulo {
+import Calculos.CalculoDeClassificacao;
+
+public class Filme extends Titulo implements CalculoDeClassificacao {
 	
 		private String diretor;
 
@@ -10,6 +12,12 @@ package br.com.alura.ScreenMatch.modelos;
 
 		public void setDiretor(String diretor) {
 			this.diretor = diretor;
+		}
+
+		@Override
+		public int getClassificacao() {
+			
+			return (int) mediaAvaliacoes()/2;
 		}
 		
 		
