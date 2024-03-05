@@ -1,5 +1,10 @@
 package br.com.alura.ExerciciosAlura4;
 
-public class ConversaoFinanceira {
+public interface ConversaoFinanceira {
 
+	void converterDolarParaReal(double valorDolar);
+	
+	
+	
+	
 }
