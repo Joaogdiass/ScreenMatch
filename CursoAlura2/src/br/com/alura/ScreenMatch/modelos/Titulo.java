@@ -1,15 +1,21 @@
 package br.com.alura.ScreenMatch.modelos;
 
 public class Titulo {
-	private String nome;
+
 	private int anoDeLancamento;
 	private boolean incluidoNoPlano;
 	private double somaAvaliacao;
 	private int totalDeAvaliacoes;
 	private int duracaoEmMinutos;
 	
+	//construtores
 	
-	
+	private String nome;
+	public Titulo(String nome, int anoDeLancamento) {
+		super();
+		this.nome = nome;
+		this.anoDeLancamento = anoDeLancamento;
+	}
 	
 	
 	

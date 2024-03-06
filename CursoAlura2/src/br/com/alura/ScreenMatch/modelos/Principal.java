@@ -8,10 +8,10 @@ import Calculos.FiltroDeRecomendacao;
 public class Principal {
 	public static void main(String[] args) {
 		
-		Filme meuFilme = new Filme();
+		Filme meuFilme = new Filme("O poderoso Chefao",1970);
 		
-		meuFilme.setNome("O poderoso Chefao");
-		meuFilme.setAnoDeLancamento(1970);
+		
+		
 		meuFilme.setDuracaoEmMinutos(180);
 		System.out.println("Duracao do filme: " + meuFilme.getDuracaoEmMinutos()); 
 		
@@ -22,10 +22,10 @@ public class Principal {
 		System.out.println("Total de avaliacoes: " + meuFilme.getotalDeAvaliacoes());
 		System.out.println("Media de avaliacoes: " + meuFilme.mediaAvaliacoes());
 		
-		Serie serie = new Serie();
+		Serie serie = new Serie("lost",2000);
 		
-		serie.setNome("lost");
-		serie.setAnoDeLancamento(2000);
+		
+		
 		serie.exibeFichaTecnica();
 		serie.setTemporadas(10);
 		serie.setEpisodiosPorTemporada(20);
@@ -52,10 +52,9 @@ public class Principal {
 		filtro.filtrar(episodio);
 				
 		
-		var filmeDoPaulo = new Filme();
+		var filmeDoPaulo = new Filme("Dogville",2003);
 		filmeDoPaulo.setDuracaoEmMinutos(200);
-		filmeDoPaulo.setNome("Dogville");
-		filmeDoPaulo.setAnoDeLancamento(2003);
+		
 		filmeDoPaulo.avalia(10);
 		
 		ArrayList<Filme> listaDeFilmes = new ArrayList<>();
