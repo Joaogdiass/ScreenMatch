@@ -21,4 +21,11 @@ public class Filme extends Titulo implements CalculoDeClassificacao {
 		}
 		
 		
+		
+		@Override
+		public String toString() {
+			
+			return "Filme: " + this.getNome() + "(" + this.getAnoDeLancamento()+ ")";
+		}
+		
 }
