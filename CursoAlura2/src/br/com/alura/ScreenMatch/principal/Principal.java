@@ -1,9 +1,12 @@
-package br.com.alura.ScreenMatch.modelos;
+package br.com.alura.ScreenMatch.principal;
 
 import java.util.ArrayList;
 
 import Calculos.CalculadoraDeTempo;
 import Calculos.FiltroDeRecomendacao;
+import br.com.alura.ScreenMatch.modelos.Episodio;
+import br.com.alura.ScreenMatch.modelos.Filme;
+import br.com.alura.ScreenMatch.modelos.Serie;
 
 public class Principal {
 	public static void main(String[] args) {

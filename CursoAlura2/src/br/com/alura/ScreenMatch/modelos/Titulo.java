@@ -73,5 +73,9 @@ public class Titulo {
 		return somaAvaliacao/totalDeAvaliacoes;
 	}
 	
+	@Override
+	public String toString() {
+		return "Filme: " + this.getNome() + " Ano de lancamento: " + this.getAnoDeLancamento();
+	}
 	
 }
