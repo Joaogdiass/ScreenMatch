@@ -43,6 +43,8 @@ public class PrincipalProduto {
     	 double mediaPreco = somaPrecos / listaDeProdutos.size();
     	 
     	 System.out.println(mediaPreco);
+    	 
+    	 
     	
     	
     }
