@@ -1,10 +1,12 @@
 package br.com.alura.ScreenMatch.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo> {
 
 	private int anoDeLancamento;
 	private boolean incluidoNoPlano;
 	private double somaAvaliacao;
+	
+
 	private int totalDeAvaliacoes;
 	private int duracaoEmMinutos;
 	
@@ -77,5 +79,15 @@ public class Titulo {
 	public String toString() {
 		return "Filme: " + this.getNome() + " Ano de lancamento: " + this.getAnoDeLancamento();
 	}
+
+	@Override
+	public int compareTo(Titulo outroTitulo) {
+		return this.getNome().compareTo(outroTitulo.getNome());
+	}
+
+
+	
+	
+	
 	
 }
